@@ -1,21 +1,24 @@
-interface IRideable
+namespace InteracesInPractice
 {
-    void Ride();
-}
-
-class Horse: IRideable
-{
-    public void Ride()
+    interface IRideable
     {
-        System.Console.WriteLine("You're riding a Horse!");
+        void Ride();
     }
-}
 
-
-class Bike: IRideable
-{
-    public void Ride()
+    class Horse: IRideable
     {
-        System.Console.WriteLine("You're riding a bike, honk honk!");
+        public void Ride()
+        {
+            System.Console.WriteLine("You're riding a Horse!");
+        }
+    }
+
+
+    class Bike: IRideable
+    {
+        public void Ride()
+        {
+            System.Console.WriteLine("You're riding a bike, honk honk!");
+        }
     }
 }
